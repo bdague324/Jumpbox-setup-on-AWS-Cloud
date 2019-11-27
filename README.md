@@ -13,7 +13,8 @@ Jumpbox setup on AWS Cloud
 3 Security groups (one for each instance)
 
 ## Architecture
- drawing
+ 
+ ![Légende](url vers l'image)
  
 ## Steps to create the architecture
  
