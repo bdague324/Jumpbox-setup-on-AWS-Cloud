@@ -43,6 +43,33 @@ Create 3 instances:
 
 Create **2 Elastic IPs** and assign each of them to the 2 instances in the public subnet: **Jumpbox** and **NAT instance**.
 
+## Route Tables
+
+Create 2 Route Tables:
+
+## Security Groups
+Create 3 Security Groups and associate each one to its corresponding instance:
+
+### Jumpbox Security Group:
+
+Inbound rules:
+
+Outbound rules:
+
+### NAT instance Security Group:
+
+Inbound rules:
+
+Outbound rules:
+
+## Final Instance Security Group:
+
+Inbound rules:
+
+Outbound rules:
+
+# Test connection on Ubuntu console:
+
 
 
 
