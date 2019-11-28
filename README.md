@@ -13,11 +13,11 @@ Jumpbox setup on AWS Cloud
 3 Security groups (one for each instance)
 
 ## Architecture
- 
+
  ![Légende](Image1.png)
- 
+
 ## Steps to create the architecture
- 
+
 ### VPC
 Create a VPC with **/16** IPv4 CIDR block.
 
@@ -73,13 +73,20 @@ All traffic 0.0.0.0/0
 ## Final Instance Security Group:
 
 Inbound rules:
-Allow SSH from local 
+Allow SSH from local
 
 Outbound rules:
 Allow all outbound traffic
 
 # Test connection on Ubuntu console:
 
+SSH connection (copying ssh key to Jumbox)
 
+copy file using:
+scp -i key.pem key.pem ec2-user@<Jumbox IP>:key.pem
 
+Connect to Jumpbox:
+ssh -i key.pem ec2-user@<JumpBox IP>
 
+From JB, connect to Final instance
+ssh -i key.pem ec2-user@<FI IP>
