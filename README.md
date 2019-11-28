@@ -54,20 +54,29 @@ Create 3 Security Groups and associate each one to its corresponding instance:
 ### Jumpbox Security Group:
 
 Inbound rules:
+Allow inbound SSH from 0.0.0.0/0
 
 Outbound rules:
+Allow outbound all traffic
 
 ### NAT instance Security Group:
 
 Inbound rules:
+* A llow all ICMP (ping from local)
+* HTTP - TCP - port 80 to IP address of the private subnet
+* SSH - TCP - port 22  to IP address of the private subnet
+* HTTPS TCP - port 443  to IP address of the private subnet
 
 Outbound rules:
+All traffic 0.0.0.0/0
 
 ## Final Instance Security Group:
 
 Inbound rules:
+Allow SSH from local 
 
 Outbound rules:
+Allow all outbound traffic
 
 # Test connection on Ubuntu console:
 
