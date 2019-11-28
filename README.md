@@ -14,7 +14,7 @@ Jumpbox setup on AWS Cloud
 
 ## Architecture
  
- ![Légende](url vers l'image)
+ ![Légende](Image1)
  
 ## Steps to create the architecture
  
