@@ -62,7 +62,7 @@ Allow outbound all traffic
 ### NAT instance Security Group:
 
 Inbound rules:
-* A llow all ICMP (ping from local)
+* Allow all ICMP (ping from local)
 * HTTP - TCP - port 80 to IP address of the private subnet
 * SSH - TCP - port 22  to IP address of the private subnet
 * HTTPS TCP - port 443  to IP address of the private subnet
@@ -90,3 +90,6 @@ ssh -i key.pem ec2-user@<JumpBox IP>
 
 From JB, connect to Final instance
 ssh -i key.pem ec2-user@<FI IP>
+
+## Run test via pinging google.com
+ping google.com
