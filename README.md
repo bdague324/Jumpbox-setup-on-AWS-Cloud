@@ -70,7 +70,7 @@ Inbound rules:
 Outbound rules:
 All traffic 0.0.0.0/0
 
-## Final Instance Security Group:
+### Final Instance Security Group:
 
 Inbound rules:
 Allow SSH from local
