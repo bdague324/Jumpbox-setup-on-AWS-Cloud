@@ -94,4 +94,4 @@ ssh -i key.pem ec2-user@<FI IP>
 ## Run test via pinging google.com
 ping google.com
 
-![Légende](Capture.png)
+![Légende](Capture.PNG)
